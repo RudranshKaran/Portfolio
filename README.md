@@ -2,7 +2,7 @@
 
 A production-ready, multi-page personal portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features pure Static Site Generation (SSG), native MDX blog integration, and a custom contact API route with Resend.
 
-**Live Demo**: [Your deployment URL]
+**Live Demo**: [URL Coming Soon]
 
 ---
 
@@ -349,7 +349,7 @@ This is a personal portfolio, but suggestions for improvements are welcome!
 ## 📧 Contact
 
 **Rudransh Karan**
-- Email: rudransh@example.com
+- Email: rudransh.karan@gmail.com
 - LinkedIn: [linkedin.com/in/rudransh-karan](https://linkedin.com/in/rudransh-karan)
 - GitHub: [github.com/RudranshKaran](https://github.com/RudranshKaran)
 

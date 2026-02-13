@@ -14,7 +14,7 @@ const socialLinks = [
   },
   { 
     platform: 'Email', 
-    url: 'mailto:rudransh@example.com', 
+    url: 'mailto:rudransh.karan@gmail.com', 
     icon: FaEnvelope 
   },
 ];

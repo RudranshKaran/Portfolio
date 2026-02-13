@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: FaEnvelope,
     label: 'Email',
-    value: 'rudransh@example.com',
-    href: 'mailto:rudransh@example.com',
+    value: 'rudransh.karan@gmail.com',
+    href: 'mailto:rudransh.karan@gmail.com',
   },
   {
     icon: FaLinkedin,
@@ -92,10 +92,10 @@ export default function ContactPage() {
             <p className="text-text-secondary mb-8 text-center">
               Or reach out directly at{' '}
               <a 
-                href="mailto:rudransh@example.com" 
+                href="mailto:rudransh.karan@gmail.com" 
                 className="text-accent hover:underline"
               >
-                rudransh@example.com
+                rudransh.karan@gmail.com
               </a>
             </p>
             
