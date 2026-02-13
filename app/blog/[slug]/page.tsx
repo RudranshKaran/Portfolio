@@ -5,7 +5,7 @@ import Container from '@/components/layout/Container';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/mdx';
 import { FaArrowLeft, FaClock, FaCalendar } from 'react-icons/fa';
 import { compileMDX } from 'next-mdx-remote/rsc';
-import { useMDXComponents } from '@/mdx-components';
+import { mdxComponents } from '@/mdx-components';
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
@@ -40,16 +40,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const { frontmatter, content } = post;
 
-  // Get custom MDX components
-  const components = useMDXComponents({});
-
-  // Compile MDX content
+  // Compile MDX content with custom components
   const { content: MDXContent } = await compileMDX({
     source: content,
     options: {
       parseFrontmatter: false,
     },
-    components,
+    components: mdxComponents,
   });
 
   const formatDate = (dateStr: string) => {

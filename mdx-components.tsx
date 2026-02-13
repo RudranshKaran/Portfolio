@@ -1,10 +1,10 @@
 import type { MDXComponents } from 'mdx/types';
 
-export function useMDXComponents(components: MDXComponents): MDXComponents {
-  return {
-    h1: ({ children }) => (
-      <h1 className="text-4xl font-bold mb-6 mt-8 text-text-primary">{children}</h1>
-    ),
+// Export components directly for use in server components
+export const mdxComponents: MDXComponents = {
+  h1: ({ children }) => (
+    <h1 className="text-4xl font-bold mb-6 mt-8 text-text-primary">{children}</h1>
+  ),
     h2: ({ children }) => (
       <h2 className="text-3xl font-bold mb-4 mt-12 text-text-primary border-b border-border pb-3 first:mt-0">{children}</h2>
     ),
@@ -83,6 +83,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         {children}
       </td>
     ),
+};
+
+// Hook version for client components
+export function useMDXComponents(components: MDXComponents): MDXComponents {
+  return {
+    ...mdxComponents,
     ...components,
   };
 }
