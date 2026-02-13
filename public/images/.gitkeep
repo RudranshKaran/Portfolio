@@ -1,0 +1,27 @@
+# Placeholder Images
+
+This directory should contain:
+
+1. **hero-rudransh.jpg** - Your professional photo (recommended: 1200x1200px)
+2. **project-rag.jpg** - RAG Pipeline project image (1200x675px)
+3. **project-agents.jpg** - AI Agents project image (1200x675px)
+4. **project-backend.jpg** - Backend project image (1200x675px)
+
+## Temporary Placeholder URLs
+
+Until you add your own images, you can use these placeholder services:
+
+- Unsplash: https://source.unsplash.com/1200x1200/?professional,portrait
+- Lorem Picsum: https://picsum.photos/1200/1200
+
+Or create solid color placeholders with:
+- https://via.placeholder.com/1200x1200/0F172A/3B82F6?text=Rudransh+Karan
+
+## Quick Fix
+
+To avoid 404 errors, you can either:
+1. Add real images to this folder
+2. Update image paths in the code to use external URLs
+3. Use a fallback image in the Image component
+
+The app will work fine with missing images, but you'll see broken image icons until you add them.
