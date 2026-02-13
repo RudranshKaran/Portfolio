@@ -7,12 +7,14 @@ export default function ExperiencePage() {
     <div className="py-20">
       <Container maxWidth="reading">
         <div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-text-primary mb-6">
-            Experience
-          </h1>
-          <p className="text-text-secondary text-lg mb-12">
-            Building production systems, leading teams, and contributing to meaningful projects
-          </p>
+          <div className="text-center mb-12">
+            <h1 className="text-5xl lg:text-6xl font-bold text-text-primary mb-6">
+              Experience
+            </h1>
+            <p className="text-text-secondary text-lg">
+              Building production systems, leading teams, and contributing to meaningful projects
+            </p>
+          </div>
 
           {/* Timeline */}
           <div className="relative">

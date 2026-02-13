@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-background/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        scrolled || mobileMenuOpen ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -67,12 +67,12 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-background">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-navy/50 transition-all duration-300"
+                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-navy/50 rounded-lg transition-all duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.label}

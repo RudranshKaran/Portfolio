@@ -27,23 +27,24 @@ export default function About() {
             {/* Left: Bio */}
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                I&apos;m a GenAI and Backend Engineer focused on building production-ready AI systems 
-                that combine the power of Large Language Models with robust backend architecture.
+                I&apos;m a <span className="text-accent font-semibold">GenAI and backend engineer</span> focused 
+                on building reliable AI systems that are designed with production in mind.
               </p>
               <p>
-                My work centers on <span className="text-accent font-semibold">LLM system design</span>, 
-                <span className="text-accent font-semibold"> RAG pipelines</span>, and 
-                <span className="text-accent font-semibold"> scalable backend infrastructure</span>. 
-                I care deeply about system reliability, performance optimization, and engineering 
-                systems that work at scale—not just demos.
+                I work primarily with <span className="text-accent font-semibold">LLM-powered applications</span> and 
+                <span className="text-accent font-semibold"> scalable backend architecture</span>, paying close 
+                attention to <span className="text-accent font-semibold">system design, performance, and maintainability</span>. 
+                I&apos;m particularly interested in how AI systems move from experimentation to real-world usage — 
+                where reliability and thoughtful engineering matter just as much as model capability.
               </p>
               <p>
-                From semantic search to async processing, I build with a production mindset: 
-                monitoring, error handling, cost optimization, and maintainability are non-negotiable.
+                I previously worked as a <span className="text-accent font-semibold">GenAI Developer Intern at HiDevs</span>, 
+                where I contributed to building and refining AI-driven systems, strengthening my understanding of 
+                practical LLM applications and backend integration.
               </p>
               <p>
-                When I&apos;m not coding, you&apos;ll find me contributing to open source, writing technical 
-                deep-dives, or experimenting with the latest LLM capabilities.
+                Beyond coding, I enjoy exploring new ideas in AI, watching sitcoms, and listening to music — 
+                a balance that keeps both my logic and creativity active.
               </p>
             </div>
 

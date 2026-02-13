@@ -5,11 +5,11 @@ export default function PhilosophyPage() {
   return (
     <div className="py-20">
       <Container>
-        <div>
+        <div className="text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-text-primary mb-6">
             Engineering Philosophy
           </h1>
-          <p className="text-text-secondary text-lg mb-12 max-w-3xl">
+          <p className="text-text-secondary text-lg mb-12 max-w-3xl mx-auto">
             Six principles that guide how I build systems, write code, and approach technical challenges
           </p>
 

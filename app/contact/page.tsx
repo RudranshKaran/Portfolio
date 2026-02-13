@@ -71,7 +71,7 @@ export default function ContactPage() {
                   <h3 className="text-text-primary font-semibold mb-1">
                     {item.label}
                   </h3>
-                  <p className="text-text-secondary text-sm">
+                  <p className="text-text-secondary text-sm break-all">
                     {item.value}
                   </p>
                 </motion.a>

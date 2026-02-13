@@ -6,11 +6,11 @@ export default function ProjectsPage() {
   return (
     <div className="py-20">
       <Container>
-        <div>
+        <div className="text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-text-primary mb-6">
             Projects
           </h1>
-          <p className="text-text-secondary text-lg mb-12 max-w-3xl">
+          <p className="text-text-secondary text-lg mb-12 max-w-3xl mx-auto">
             Production-ready AI systems and backend infrastructure. Each project showcases 
             architecture decisions, technical tradeoffs, and real-world problem solving.
           </p>
