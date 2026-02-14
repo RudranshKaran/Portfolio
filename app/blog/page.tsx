@@ -13,8 +13,7 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="text-text-secondary text-lg mb-12 max-w-3xl mx-auto">
-            Technical deep-dives on AI systems, backend architecture, and production engineering. 
-            No fluff—just code, tradeoffs, and lessons learned.
+            Building with AI in public - experiments, systems, failures, and reflections along the way.
           </p>
 
           {/* Blog Posts Grid */}
