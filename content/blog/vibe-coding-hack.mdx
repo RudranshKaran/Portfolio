@@ -1,0 +1,301 @@
+---
+title: 'I Accidentally Built an AI Feedback Loop While Vibe Coding'
+excerpt: 'What started as a frustrating frontend bug turned into an unexpected AI workflow: using Perplexity’s Comet browser to analyze my live app and feeding that report into GitHub Copilot to create a self-improving loop.'
+date: '2025-10-16'
+readTime: '9 min read'
+category: 'Engineering'
+tags: ['Vibe Coding', 'AI Tools', 'Copilot', 'Perplexity', 'Developer Workflow']
+published: true
+---
+
+I wasn’t trying to invent a workflow.
+
+I was just trying to fix a stupid frontend bug.
+
+You know the kind —  
+everything looks fine,  
+the logic seems correct,  
+but something just *feels* off in the UI.
+
+I tried the usual things.
+
+Screenshots.  
+Explaining the issue manually.  
+Copy-pasting components into Copilot for context.  
+
+It kept giving decent suggestions.
+
+But nothing clicked.
+
+And then I had a random thought:
+
+> What if the AI could see my website the way I see it?
+
+Not just the code.
+
+The actual running app.
+
+---
+
+## Letting an AI “Look” at My Localhost
+
+I opened my local development server inside Perplexity’s Comet browser.
+
+Instead of describing the issue, I told it:
+
+“Analyze this website, find what’s causing the issue, and generate a report.”
+
+Not a fix.
+
+A report.
+
+That distinction mattered.
+
+A few moments later, it responded with:
+
+- layout inconsistencies  
+- possible CSS conflicts  
+- suspicious component state logic  
+- a breakdown of what might be happening  
+
+It didn’t just guess.
+
+It structured the problem.
+
+That was the first moment I felt something shift.
+
+---
+
+## The Real Magic Wasn’t the Analysis
+
+The real magic happened after that.
+
+I copied the report.
+
+Then I pasted it into GitHub Copilot as context.
+
+Not:
+
+“Fix my bug.”
+
+But:
+
+“Here’s an analysis of what might be wrong. Based on this, update the code.”
+
+And it worked.
+
+Not perfectly. Not instantly.
+
+But it moved in the right direction — fast.
+
+I wasn’t manually translating the problem anymore.
+
+One AI analyzed.
+
+Another AI implemented.
+
+I was suddenly orchestrating instead of debugging.
+
+---
+
+## The Accidental Feedback Loop
+
+That’s when it got interesting.
+
+Once the bug was fixed, I tried something else.
+
+I asked Comet:
+
+“Analyze this site and give me a report of what needs improvement.”
+
+It responded with:
+
+- UX suggestions  
+- performance hints  
+- layout polish recommendations  
+- structural cleanups  
+
+Again, I copied the report.
+
+Pasted it into Copilot.
+
+And said:
+
+“Implement these improvements.”
+
+Copilot started refactoring.
+
+Cleaning.
+
+Polishing.
+
+Optimizing.
+
+It felt like I had built a tiny autonomous improvement loop:
+
+1. AI observes the running system  
+2. AI generates structured feedback  
+3. AI implements improvements  
+4. Repeat  
+
+No overthinking.
+
+Just iteration.
+
+---
+
+## Why This Worked So Well
+
+Most of the time, when we vibe code, the AI only sees what we paste.
+
+A file.  
+A component.  
+A stack trace.
+
+It doesn’t see:
+
+- how the UI actually renders  
+- how components visually interact  
+- layout spacing issues  
+- real-time behavior  
+
+By letting an AI analyze the running site, I expanded the context window beyond code.
+
+It became environment-aware.
+
+And that context made Copilot dramatically more effective.
+
+---
+
+## This Isn’t Automation — It’s Orchestration
+
+What I realised in that moment is this:
+
+The power isn’t in one tool.
+
+It’s in chaining tools intentionally.
+
+Perplexity’s Comet acted like:
+
+- a reviewer  
+- a QA analyst  
+- a UX critic  
+
+Copilot acted like:
+
+- an implementer  
+- a refactoring assistant  
+- a code transformer  
+
+Instead of asking one AI to do everything poorly, I let two AIs specialize.
+
+That division of roles created clarity.
+
+---
+
+## The Hidden Insight About Vibe Coding
+
+We often treat vibe coding like magic.
+
+Prompt → Code → Done.
+
+But the deeper opportunity is building **AI-to-AI workflows**.
+
+Not autonomous agents.
+
+Not over-engineered systems.
+
+Just simple feedback loops.
+
+Observe → Report → Improve → Repeat.
+
+That pattern is powerful.
+
+And surprisingly underused.
+
+---
+
+## The Risks (Because It’s Not All Magic)
+
+There’s a danger here.
+
+If you blindly accept AI-generated reports and implementations, you:
+
+- lose architectural control  
+- accumulate invisible technical debt  
+- outsource critical thinking  
+
+The loop works best when you stay in the middle.
+
+You’re not removed.
+
+You’re supervising.
+
+The AI suggests.  
+You decide.  
+The AI implements.  
+
+That balance is important.
+
+---
+
+## Why This Changed How I Build
+
+After that day, I stopped thinking in terms of:
+
+“How do I prompt better?”
+
+And started thinking in terms of:
+
+“How do I design better AI feedback cycles?”
+
+Instead of relying on one large prompt, I now:
+
+- generate analysis first  
+- separate critique from implementation  
+- chain outputs deliberately  
+- iterate with structure  
+
+It feels less chaotic.
+
+More intentional.
+
+More scalable.
+
+---
+
+## The Bigger Potential
+
+If this works for frontend bugs, imagine applying the same pattern to:
+
+- performance optimization  
+- security reviews  
+- API design  
+- accessibility audits  
+- documentation improvement  
+
+AI analyzing live systems.  
+AI implementing structured improvements.  
+Humans supervising direction.
+
+That’s not just vibe coding.
+
+That’s augmented engineering.
+
+---
+
+## Final Thought
+
+The tweet made it sound dramatic.
+
+It wasn’t some revolutionary breakthrough.
+
+It was just this:
+
+Let one AI look.  
+Let another AI build.  
+Stay in the middle.
+
+And suddenly, building didn’t feel like guesswork anymore.
+
+It felt like conducting an orchestra.

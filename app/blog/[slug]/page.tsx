@@ -6,6 +6,10 @@ import { getBlogPost, getAllBlogSlugs } from '@/lib/mdx';
 import { FaArrowLeft, FaClock, FaCalendar } from 'react-icons/fa';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { mdxComponents } from '@/mdx-components';
+import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypePrism from 'rehype-prism-plus';
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
@@ -40,11 +44,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const { frontmatter, content } = post;
 
-  // Compile MDX content with custom components
+  // Compile MDX content with custom components and plugins
   const { content: MDXContent } = await compileMDX({
     source: content,
     options: {
       parseFrontmatter: false,
+      mdxOptions: {
+        remarkPlugins: [remarkGfm],
+        rehypePlugins: [
+          rehypeSlug,
+          [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+          rehypePrism,
+        ],
+      },
     },
     components: mdxComponents,
   });
@@ -112,9 +124,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </header>
 
           {/* Post Content */}
-          <div className="blog-content mt-8">
+          <article className="prose prose-invert prose-slate max-w-none mt-8">
             {MDXContent}
-          </div>
+          </article>
         </article>
 
         {/* Navigation */}

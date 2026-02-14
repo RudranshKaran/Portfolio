@@ -34,165 +34,72 @@ body {
   }
 }
 
-/* Blog Content Styles */
-.blog-content {
-  max-width: 100%;
-  word-wrap: break-word;
-  line-height: 1.7;
-}
+/* Prism Syntax Highlighting Theme - Tomorrow Night */
+@import '../node_modules/prismjs/themes/prism-tomorrow.css';
 
-.blog-content > * + * {
-  margin-top: 0;
-}
-
-.blog-content pre {
-  white-space: pre;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.blog-content pre code {
-  display: block;
-  padding: 0;
-  background: transparent;
-  border: none;
-  color: inherit;
-  font-size: inherit;
-}
-
-.blog-content code {
+/* Override Prism styles for our color scheme */
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none;
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-  font-size: 0.9em;
 }
 
-.blog-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 0.5rem;
+pre[class*="language-"] {
+  background: rgba(15, 23, 42, 0.9) !important;
+  border: 1px solid #1F2937;
 }
 
-.blog-content ul ul,
-.blog-content ol ul,
-.blog-content ul ol,
-.blog-content ol ol {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1.25rem;
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6B7280;
 }
 
-/* Unordered list items with arrow bullets */
-.blog-content ul > li.li-item::before {
-  content: '▹';
-  color: #3B82F6;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: 600;
-  font-size: 1em;
-  line-height: 1.7;
-  width: 1rem;
+.token.punctuation {
+  color: #9CA3AF;
 }
 
-/* Ordered list items without custom bullets */
-.blog-content ol > li.li-item {
-  padding-left: 0;
-  list-style-position: outside;
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #F87171;
 }
 
-.blog-content ol > li.li-item::before {
-  content: none;
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #34D399;
 }
 
-/* Prevent double bullets */
-.blog-content ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #60A5FA;
 }
 
-.blog-content ol {
-  list-style-type: decimal;
-  padding-left: 1.5rem;
-  margin-left: 0;
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #A78BFA;
 }
 
-/* Better formatting for inline code within paragraphs */
-.blog-content p code {
-  white-space: nowrap;
+.token.function,
+.token.class-name {
+  color: #FBBF24;
 }
 
-/* Ensure proper spacing between sections */
-.blog-content h2 + p,
-.blog-content h3 + p,
-.blog-content h4 + p {
-  margin-top: 0.75rem;
-}
-
-/* Better blockquote styling */
-.blog-content blockquote p {
-  margin-bottom: 0.5rem;
-}
-
-.blog-content blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-/* List items with strong text (like "Hot tier:", "Results:") */
-.blog-content li strong:first-child {
-  color: #E5E7EB;
-  font-weight: 700;
-}
-
-/* Checkboxes and special list markers */
-.blog-content li:has(input[type="checkbox"]) {
-  list-style: none;
-  padding-left: 0;
-}
-
-.blog-content li:has(input[type="checkbox"])::before {
-  content: none;
-}
-
-/* Better spacing for paragraphs within lists */
-.blog-content li > p {
-  margin-bottom: 0.5rem;
-}
-
-.blog-content li > p:last-child {
-  margin-bottom: 0;
-}
-
-/* Fix nested content spacing in lists */
-.blog-content li > ul,
-.blog-content li > ol {
-  margin-left: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 1.25rem;
-}
-
-/* Code blocks within lists */
-.blog-content li pre {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-/* Better bullet alignment for multi-line list items */
-.blog-content ul > li.li-item {
-  line-height: 1.7;
-  display: block;
-}
-
-.blog-content ol > li.li-item {
-  line-height: 1.7;
-  display: list-item;
-}
-
-/* Fix spacing for lists with emojis or special characters */
-.blog-content li {
-  text-indent: 0;
+.token.regex,
+.token.important,
+.token.variable {
+  color: #FB923C;
 }

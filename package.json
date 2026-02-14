@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "framer-motion": "^11.15.0",
     "gray-matter": "^4.0.3",
     "next": "^15.1.6",
     "next-mdx-remote": "^6.0.0",
+    "prismjs": "^1.30.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-prism-plus": "^2.0.2",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "resend": "^4.0.3"
   },
   "devDependencies": {

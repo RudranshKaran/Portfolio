@@ -21,7 +21,7 @@ export default function BlogPage() {
           {posts.length > 0 ? (
             <div className="grid md:grid-cols-2 gap-8">
               {posts.map((post) => (
-                <div key={post.slug}>
+                <div key={post.slug} className="h-full">
                   <BlogCard post={post} />
                 </div>
               ))}

@@ -16,7 +16,7 @@ export default function BlogCard({ post }: BlogCardProps) {
   };
 
   return (
-    <article className="bg-navy/50 border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 hover:shadow-lg">
+    <article className="bg-navy/50 border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 hover:shadow-lg h-full flex flex-col">
       {/* Category Badge */}
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/30">
@@ -35,12 +35,12 @@ export default function BlogCard({ post }: BlogCardProps) {
       </h3>
 
       {/* Excerpt */}
-      <p className="text-text-secondary mb-4 line-clamp-3">
+      <p className="text-text-secondary mb-4 line-clamp-3 flex-grow">
         {post.excerpt}
       </p>
 
       {/* Footer */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mt-auto">
         <time className="text-sm text-text-secondary">
           {formatDate(post.date)}
         </time>
