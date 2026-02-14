@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const socialLinks = [
   { 
@@ -11,6 +12,16 @@ const socialLinks = [
     platform: 'LinkedIn', 
     url: 'https://linkedin.com/in/rudransh-karan', 
     icon: FaLinkedin 
+  },
+  { 
+    platform: 'X (Twitter)', 
+    url: 'https://x.com/rudransh_karan', 
+    icon: FaXTwitter 
+  },
+  { 
+    platform: 'Instagram', 
+    url: 'https://instagram.com/rudranshkaran', 
+    icon: FaInstagram 
   },
   { 
     platform: 'Email', 
