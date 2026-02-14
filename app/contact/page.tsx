@@ -3,20 +3,15 @@
 import Container from '@/components/layout/Container';
 import ContactForm from '@/features/contact/ContactForm';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
-const contactInfo = [
+const directContact = [
   {
     icon: FaEnvelope,
     label: 'Email',
     value: 'rudransh.karan@gmail.com',
     href: 'mailto:rudransh.karan@gmail.com',
-  },
-  {
-    icon: FaLinkedin,
-    label: 'LinkedIn',
-    value: 'rudransh-karan',
-    href: 'https://linkedin.com/in/rudransh-karan',
   },
   {
     icon: FaGithub,
@@ -29,6 +24,27 @@ const contactInfo = [
     label: 'Resume',
     value: 'Download PDF',
     href: '/resume.pdf',
+  },
+];
+
+const socialMedia = [
+  {
+    icon: FaLinkedin,
+    label: 'LinkedIn',
+    value: 'rudransh-karan',
+    href: 'https://linkedin.com/in/rudransh-karan',
+  },
+  {
+    icon: FaXTwitter,
+    label: 'X (Twitter)',
+    value: '@rudransh_karan',
+    href: 'https://x.com/rudransh_karan',
+  },
+  {
+    icon: FaInstagram,
+    label: 'Instagram',
+    value: '@rudranshkaran',
+    href: 'https://instagram.com/rudranshkaran',
   },
 ];
 
@@ -52,9 +68,9 @@ export default function ContactPage() {
             </p>
           </div>
 
-          {/* Contact Info Cards */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {contactInfo.map((item, index) => {
+          {/* Direct / Professional Contact */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {directContact.map((item, index) => {
               const Icon = item.icon;
               return (
                 <motion.a
@@ -77,6 +93,36 @@ export default function ContactPage() {
                 </motion.a>
               );
             })}
+          </div>
+
+          {/* Social Media Section */}
+          <div className="mb-16">
+            <h2 className="text-lg text-gray-400 mb-6 text-center">Socials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {socialMedia.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <motion.a
+                    key={item.label}
+                    href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                    className="bg-navy/50 border border-border rounded-lg p-6 hover:border-accent/50 transition-all duration-300 hover:shadow-lg text-center"
+                  >
+                    <Icon className="text-accent mx-auto mb-3" size={32} />
+                    <h3 className="text-text-primary font-semibold mb-1">
+                      {item.label}
+                    </h3>
+                    <p className="text-text-secondary text-sm break-all">
+                      {item.value}
+                    </p>
+                  </motion.a>
+                );
+              })}
+            </div>
           </div>
 
           {/* Contact Form */}
