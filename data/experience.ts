@@ -2,6 +2,24 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
+    id: '0',
+    title: 'AI Engineer Intern',
+    organization: 'Agentyne Technologies Pvt Ltd',
+    type: 'Internship',
+    location: 'Bengaluru, India (Remote)',
+    startDate: '2026-04',
+    current: true,
+    description: 'Working on building and scaling AI-driven systems, contributing to backend development, integrations, and intelligent automation within a fast-paced startup environment.',
+    achievements: [
+      'Developing and integrating AI-powered features into production systems using Python and backend frameworks',
+      'Collaborating with the engineering team on real-world product modules, testing, and deployment workflows',
+      'Implementing scalable backend logic and supporting system integrations across platform components',
+      'Participating in code reviews, standups, and agile development cycles in a startup environment'
+    ],
+    technologies: ['Python', 'Django', 'AI/ML', 'Backend Development', 'API Integration', 'System Design'],
+    impact: 'Gaining hands-on experience in building production-grade AI systems while contributing to real-world product development in a startup ecosystem.'
+  },
+  {
     id: '1',
     title: 'PR & Sponsorship Head',
     organization: 'Nexora: Vibe Coding Club, Nitte Meenakshi Institute of Technology',
